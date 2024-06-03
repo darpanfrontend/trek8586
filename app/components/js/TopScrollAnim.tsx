@@ -18,9 +18,9 @@ const TopScrollAnim: FC = () => {
                   <div className='text-gray-900'>
                     <span className='block text-2xl'>Pioneer in Trekking at Eastern Region</span>
                     <h1 className={`${headingFont.className} heading-text w-full bg-clip-text text-7xl leading-none font-bold mb-4 will-change-[opacity] uppercase`}>
-                      Website Coming Soon
+                      <span className='text-green-900'>Website</span> Coming Soon
                     </h1>
-                    <p className='mb-12 text-3xl'>For treks, please contact us at our <a title='+97798404040309' href="https://wa.me/+97798404040309?text=Hello!%20Suggest%20me%20a%20trek%20please">whatsapp</a> or</p>
+                    <p className='mb-12 text-3xl'>For treks, please contact us at our <a title='+97798404040309' href="https://wa.me/+97798404040309?text=Hello!%20Suggest%20me%20a%20trek%20please">whatsapp (+97798404040309) number</a> or</p>
                     <ButtonComponent href="tel:+97798404040309" tagType={"a"}>Call Us Now</ButtonComponent>
                   </div>
                 </div>
