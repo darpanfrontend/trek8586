@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.heading-text span:first-child{
+    @apply text-green-900
+}
+/* logo animate */
+.st0 {
+    stroke: #000000;
+    fill:transparent;
+    stroke-width: 2;
+    stroke-miterlimit: 10;
+}
+.st1 {
+    stroke-dasharray: 404.1px;
+    stroke-dashoffset: 600px;
+    animation: draw-stroke 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0s,
+        draw-fill 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8s forwards;
+}
+.st2 {
+    stroke-dasharray: 793.84px;
+    stroke-dashoffset: 600px;
+    animation: draw-stroke 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.12s,
+        draw-fill 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.9s forwards;
+}
+.grid-anim-1 {
+    animation: move-rectangle 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0s both;
+}.grid-anim-2 {
+    animation: move-rectangle 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.5s both;
+}.grid-anim-3 {
+    animation: move-rectangle 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1s both;
+}.grid-anim-4 {
+    animation: move-rectangle 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.5s both;
+}
+@keyframes draw-stroke {
+    to {
+        stroke-dashoffset: 0px;
+    }
+}
+@keyframes draw-fill {
+    to {
+        fill: #000000;
+    }
+}
+@keyframes move-rectangle{
+    to{
+        height:0px;
+    }
+}
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill{
+    @apply bg-gray-500 !important;
+}
+.swiper-pagination-progressbar{
+    @apply bg-gray-200 !important;
+    height:2px !important;
+}
+[data-animation]{
+    @apply transition-all duration-100 ease-out-quint opacity-0;
+}
+.animate__animated{
+    @apply opacity-100;
+}
+.animate__relativeSlideUp {
+    @apply relative top-full opacity-0 overflow-hidden;
+    animation: slideUp 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+}
+
+@keyframes slideUp {
+    0% {
+        @apply top-full opacity-0;
+    }
+    
+    100% {
+        @apply top-0 opacity-100;
+    }
+}
+.animate__letterSpaced {
+    @apply relative tracking-widest opacity-0 overflow-hidden;
+    animation: letterSpaced 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+}
+
+@keyframes letterSpaced {
+    0% {
+        @apply tracking-widest opacity-0;
+    }
+    100% {
+        @apply tracking-normal opacity-100;
+    }
+}
+.checkbox-container input:checked ~ span{
+    @apply bg-gray-900;
+}.mason:nth-child(4n) {
+    transform-origin: right center;
+}.mason:nth-child(3n-2) {
+    transform-origin: left center;
+}
+
+.default-cursor {
+    @apply inline-block w-4 h-4 mr-8 border-t-4 border-r-4 border-gray-900 transform -rotate-90;
+}
+
+.anchor-cursor{
+    @apply inline-block w-5 h-5 mr-10 border-t-[5px] border-r-[5px] border-gray-900 transform -rotate-45;
+ }
+/* .triangle-cursor {
+    width: 0; 
+    height: 0; 
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    
+    border-bottom: 30px solid theme('colors.blue.900');
+} */
