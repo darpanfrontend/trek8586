@@ -22,6 +22,11 @@ const TopScrollAnim: FC = () => {
                     </h1>
                     <p className='mb-12 md:text-xl lg:text-2xl'>For treks, contact us at our 
                     <a title='+97798404040309' href="https://wa.me/+97798404040309?text=Hello!%20Suggest%20me%20a%20trek%20please"> whatsapp (+97798404040309)</a> <span className='block text-green-900 underline bold'>or <a href='tel:+97798404040309'>call us directly at +97798404040309</a></span></p>
+
+                    <p className='mt-12'>
+                      <a className='mr-2' href='https://www.facebook.com/trek8586'>Facebook</a>
+                      <a href='https://www.instagram.com/trek8586'>Instagram</a>
+                    </p>
                   </div>
                 </div>
               </div>
