@@ -1,6 +1,5 @@
 "use client"
 import React, { FC } from 'react';
-import ButtonComponent from '../ui/ButtonComponent';
 import { headingFont } from '../../fonts';
 
 const TopScrollAnim: FC = () => {
