@@ -22,7 +22,7 @@ const TopScrollAnim: FC = () => {
                     </h1>
                     <div className='absolute bottom-0 left-0 py-8 w-full'>
                       <p className='mb-4 text-base sm:text-lg md:text-xl lg:text-2xl'>For treks, DM us at 
-                        <a className='text-green-900 font-semibold' title='+97798404040309' href="https://wa.me/+97798404040309?text=Hello!%20Suggest%20me%20a%20trek%20please"> whatsapp (+97798404040309)</a> <span className='block text-green-900 font-semibold'>or <a href='tel:+97798404040309'>call us at +97798404040309</a></span></p>
+                        <a className='text-green-900 font-semibold' title='+9779840404309' href="https://wa.me/+9779840404309?text=Hello!%20Suggest%20me%20a%20trek%20please"> whatsapp (+977 9840404309)</a> <span className='block text-green-900 font-semibold'>or <a href='tel:+9779840404309'>call us at +977 9840404309</a></span></p>
 
                       <p className='text-2xl underline font-semibold'>
                         <a className='mr-4' href='https://www.facebook.com/trek8586'>Facebook</a>
